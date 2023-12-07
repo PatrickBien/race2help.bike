@@ -20,3 +20,5 @@ git push
 ```shell
 git pull
 ```
+> [!IMPORTANT]
+> The entire application is created by *Patrick Bien*, member and founder of [codingstudios](https://codingstudios.click).
