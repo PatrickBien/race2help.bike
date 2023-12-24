@@ -9,18 +9,18 @@ body {
     height: 30%;
 }
 
-.header {
-    background-color: #c55e5e;
+header {
+    background-color: #aa1e30;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
-.content {
+main {
     padding: 20px;
 }
 
-.footer {
+footer {
     background-color: #333;
     color: white;
     text-align: center;
