@@ -5,12 +5,14 @@ body {
     color: #333;
 }
 
-.hero {
-    height: 30%;
+.logo {
+    height: 4rem;
 }
 
 header {
-    background-color: #aa1e30;
+    background-color: #1b3b55;
+    width: 100%;
+    position: fixed;
     color: white;
     text-align: center;
     padding: 20px 0;
