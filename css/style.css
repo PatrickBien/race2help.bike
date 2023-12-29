@@ -9,6 +9,22 @@ body {
     height: 4rem;
 }
 
+.slogan {
+    text-transform: uppercase;
+
+}
+
+.hard {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.harder {
+    font-weight: bolder;
+    font-size: 1.4rem;
+
+}
+
 main {
     display: flex;
     flex-direction: column;
