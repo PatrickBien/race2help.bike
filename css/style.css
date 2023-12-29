@@ -3,29 +3,35 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    height: 100vh;
 }
 
 .logo {
     height: 4rem;
 }
 
-header {
+main {
     display: flex;
-    background-color: #1b3b55;
+    flex-direction: column;
+    height: 100vh;
+}
+
+article {
+    flex: 9;
+    padding: 1rem;
+}
+
+header {
+    flex: 1;
+    font-family: wotfard-bold, sans-serif;
+    display: flex;
     width: 100%;
-    color: white;
+    color: #1b3b55;
     text-align: center;
     padding: 20px 0;
     justify-content: space-around;
     align-items: center;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 
 footer {
     background-color: #333;
@@ -34,4 +40,5 @@ footer {
     padding: 10px 0;
     bottom: 0;
     width: 100%;
+    flex: 1;
 }
