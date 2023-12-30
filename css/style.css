@@ -25,7 +25,7 @@ body {
     /* Animation on hover for interactive effect */
     &:hover {
         transform: scale(1.05);
-        box-shadow: 0px 0px 20px 10px #f77f00;
+        box-shadow: 0px 0px 20px 10px #b21f1f;
     }
 }
 
@@ -47,10 +47,27 @@ main {
     height: 100vh;
 }
 
+
 article {
     flex: 9;
-    padding: 1rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #e9ecef;
+        border-left-color: #0056b3;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
 }
+
 
 header {
     flex: 1;
