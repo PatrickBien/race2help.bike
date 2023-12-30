@@ -91,3 +91,11 @@ footer {
     width: 100%;
     flex: 1;
 }
+a{
+    text-decoration: none;
+    color:#e9ecef;
+}
+a:hover{
+    color:#b21f1f;
+    text-decoration: underline;
+}
