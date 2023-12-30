@@ -84,15 +84,22 @@ header {
 }
 
 
+
+
 footer {
-    background-color: #333;
+    background: linear-gradient(to right, #1a2a6c, #b21f1f);
+    /* Gradient from #333 to a lighter gray */
     color: white;
+    /* White text for contrast against the dark background */
+    padding: 15px;
     text-align: center;
-    padding: 10px 0;
-    bottom: 0;
+    border-top: 1px solid #555;
+    /* Optional: adds a subtle border at the top */
     width: 100%;
     flex: 1;
 }
+
+
 
 a {
     text-decoration: none;
