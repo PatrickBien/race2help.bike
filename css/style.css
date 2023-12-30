@@ -49,12 +49,14 @@ main {
 
 
 article {
+    width: 80%;
+    align-self: center;
     flex: 9;
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #f8f9fa;
-    border-left: 4px solid #007bff;
-    padding: 15px;
+    border-left: 4px solid #b21f1f;
+    padding-left: 1rem;
     margin: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     line-height: 1.6;
@@ -91,11 +93,13 @@ footer {
     width: 100%;
     flex: 1;
 }
-a{
+
+a {
     text-decoration: none;
-    color:#e9ecef;
+    color: #e9ecef;
 }
-a:hover{
-    color:#b21f1f;
+
+a:hover {
+    color: #b21f1f;
     text-decoration: underline;
 }
