@@ -14,7 +14,7 @@ h2 {
     border-bottom: 2px solid #1a2a6c;
     letter-spacing: 1.5px;
     display: inline-block;
-    color:  #1a2a6c;
+    color: #1a2a6c;
 }
 
 .slogan {
@@ -103,6 +103,8 @@ footer {
     /* Optional: adds a subtle border at the top */
     width: 100%;
     flex: 1;
+    display: flex;
+    justify-content: space-around
 }
 
 
