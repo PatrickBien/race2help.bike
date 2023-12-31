@@ -47,8 +47,7 @@ main {
     height: 100vh;
 }
 
-
-article {
+section{
     width: 80%;
     align-self: center;
     flex: 9;
