@@ -125,5 +125,15 @@ small {
 
 .powered {
     font-size: 0.6rem;
-    
+
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.textlink {
+    color: black;
+    text-decoration: underline;
 }
