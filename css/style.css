@@ -118,3 +118,12 @@ a:hover {
     color: #b21f1f;
     text-decoration: underline;
 }
+
+small {
+    font-size: 0.9rem
+}
+
+.powered {
+    font-size: 0.6rem;
+    
+}
