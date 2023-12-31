@@ -104,7 +104,8 @@ footer {
     width: 100%;
     flex: 1;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    max-height: 3rem;
 }
 
 
