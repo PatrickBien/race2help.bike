@@ -1,3 +1,8 @@
+:root {
+    --dark-blue: #1a2a6c;
+    --race-red:  #b21f1f;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,17 +16,17 @@ body {
 
 h2 {
     font-family: 'Impact', sans-serif;
-    border-bottom: 2px solid #1a2a6c;
+    border-bottom: 2px solid var(--dark-blue);
     letter-spacing: 1.5px;
     display: inline-block;
-    color: #1a2a6c;
+    color: var(--dark-blue)
 }
 
 .slogan {
     background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
     color: white;
     font-family: 'Impact', sans-serif;
-    text-shadow: 1px 1px 2px black, 0 0 25px darkblue, 0 0 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px var(--dark-blue), 0 0 5px var(--dark-blue);
     padding: 20px;
     border: 3px solid #fdbb2d;
     box-shadow: 0px 0px 15px 5px #f77f00;
@@ -61,7 +66,7 @@ section {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #f8f9fa;
-    border-left: 4px solid #b21f1f;
+    border-left: 4px solid var(--race-red);
     padding-left: 1rem;
     margin: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -93,7 +98,7 @@ header {
 
 
 footer {
-    background: linear-gradient(to right, #1a2a6c, #b21f1f);
+    background: linear-gradient(to right, var(--dark-blue),var(--race-red));
     /* Gradient from #333 to a lighter gray */
     color: white;
     /* White text for contrast against the dark background */
@@ -140,33 +145,50 @@ em {
 
 .event-list {
     font-family: 'Arial', sans-serif;
-    color: #333; /* Dark color for text */
-    background-color: #f9f9f9; /* Light background color */
-    border-radius: 8px; /* Rounded corners */
+    color: #333;
+    /* Dark color for text */
+    background-color: #f9f9f9;
+    /* Light background color */
+    border-radius: 8px;
+    /* Rounded corners */
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 600px; /* Optimal width for the list */
-    margin: 20px auto; /* Center the list and add space around it */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    max-width: 600px;
+    /* Optimal width for the list */
+    margin: 20px auto;
+    /* Center the list and add space around it */
 }
 
 .event-list ol {
-    counter-reset: event-counter; /* Reset the counter for list items */
-    list-style-type: none; /* Remove default list style */
+    counter-reset: event-counter;
+    /* Reset the counter for list items */
+    list-style-type: none;
+    /* Remove default list style */
     padding: 0;
 }
 
 .event-list li {
-    counter-increment: event-counter; /* Increment counter for each list item */
-    margin-bottom: 15px; /* Space between list items */
-    padding-left: 20px; /* Space before the list item content */
-    position: relative; /* Needed for absolute positioning of the pseudo-element */
+    counter-increment: event-counter;
+    /* Increment counter for each list item */
+    margin-bottom: 15px;
+    /* Space between list items */
+    padding-left: 20px;
+    /* Space before the list item content */
+    position: relative;
+    /* Needed for absolute positioning of the pseudo-element */
 }
 
 .event-list li:before {
-    content: counter(event-counter) '.'; /* Display counter with a period */
+    content: counter(event-counter) '.';
+    /* Display counter with a period */
     position: absolute;
-    left: 0; /* Align the counter to the left */
-    top: 0; /* Align the counter to the top */
-    font-weight: bold; /* Make the counter bold */
-    color: #007bff; /* Color for the counter, can match the theme */
+    left: 0;
+    /* Align the counter to the left */
+    top: 0;
+    /* Align the counter to the top */
+    font-weight: bold;
+    /* Make the counter bold */
+    color: var(--dark-blue);
+    /* Color for the counter, can match the theme */
 }
