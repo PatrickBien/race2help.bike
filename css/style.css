@@ -141,6 +141,8 @@ em {
 .textlink {
     color: black;
     text-decoration: underline;
+    font-family: 'Impact', sans-serif;
+    
 }
 
 .event-list {
