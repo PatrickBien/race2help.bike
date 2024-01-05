@@ -1,6 +1,6 @@
 :root {
     --dark-blue: #1a2a6c;
-    --race-red:  #b21f1f;
+    --race-red: #b21f1f;
 }
 
 body {
@@ -98,7 +98,7 @@ header {
 
 
 footer {
-    background: linear-gradient(to right, var(--dark-blue),var(--race-red));
+    background: linear-gradient(to right, var(--dark-blue), var(--race-red));
     /* Gradient from #333 to a lighter gray */
     color: white;
     /* White text for contrast against the dark background */
@@ -144,52 +144,70 @@ em {
     font-family: 'Arial', ;
     font-weight: bold;
 
-.event-list {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    /* Dark color for text */
-    background-color: #f9f9f9;
-    /* Light background color */
-    border-radius: 8px;
-    /* Rounded corners */
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
-    max-width: 600px;
-    /* Optimal width for the list */
-    margin: 20px auto;
-    /* Center the list and add space around it */
-}
+    .event-list {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        /* Dark color for text */
+        background-color: #f9f9f9;
+        /* Light background color */
+        border-radius: 8px;
+        /* Rounded corners */
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow for depth */
+        max-width: 600px;
+        /* Optimal width for the list */
+        margin: 20px auto;
+        /* Center the list and add space around it */
+    }
 
-.event-list ol {
-    counter-reset: event-counter;
-    /* Reset the counter for list items */
-    list-style-type: none;
-    /* Remove default list style */
-    padding: 0;
-}
+    .event-list ol {
+        counter-reset: event-counter;
+        /* Reset the counter for list items */
+        list-style-type: none;
+        /* Remove default list style */
+        padding: 0;
+    }
 
-.event-list li {
-    counter-increment: event-counter;
-    /* Increment counter for each list item */
-    margin-bottom: 15px;
-    /* Space between list items */
-    padding-left: 20px;
-    /* Space before the list item content */
-    position: relative;
-    /* Needed for absolute positioning of the pseudo-element */
-}
+    .event-list li {
+        counter-increment: event-counter;
+        /* Increment counter for each list item */
+        margin-bottom: 15px;
+        /* Space between list items */
+        padding-left: 20px;
+        /* Space before the list item content */
+        position: relative;
+        /* Needed for absolute positioning of the pseudo-element */
+    }
 
-.event-list li:before {
-    content: counter(event-counter) '.';
-    /* Display counter with a period */
-    position: absolute;
-    left: 0;
-    /* Align the counter to the left */
-    top: 0;
-    /* Align the counter to the top */
-    font-weight: bold;
-    /* Make the counter bold */
-    color: var(--dark-blue);
-    /* Color for the counter, can match the theme */
+    .event-list li:before {
+        content: counter(event-counter) '.';
+        /* Display counter with a period */
+        position: absolute;
+        left: 0;
+        /* Align the counter to the left */
+        top: 0;
+        /* Align the counter to the top */
+        font-weight: bold;
+        /* Make the counter bold */
+        color: var(--dark-blue);
+        /* Color for the counter, can match the theme */
+    }
+
+
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
 }
