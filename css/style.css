@@ -3,10 +3,12 @@
     --race-red: #b21f1f;
     --slogan-orange: #fdbb2d;
     --text-color: #333;
+    --content-font: Arial, sans-serif;
+    
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--content-font);
     margin: 0;
     padding: 0;
     color: var(--text-color);
