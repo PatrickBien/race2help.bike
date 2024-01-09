@@ -69,7 +69,7 @@ section {
     align-self: center;
     flex: 9;
     font-family: var(--content-font);
-    color: #333;
+    color: var(--text-color);
     background-color: #f8f9fa;
     border-left: 4px solid var(--race-red);
     padding-left: 1rem;
@@ -80,7 +80,7 @@ section {
 
     &:hover {
         background-color: #e9ecef;
-        border-left-color: #0056b3;
+        border-left-color: var(--dark-blue);
         transform: translateY(-2px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
