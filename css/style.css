@@ -5,6 +5,7 @@
     --text-color: #333;
     --content-font: monospace, sans-serif;
     --header-font: 'Impact', sans-serif;
+    --backround-color: #f8f9fa;
     
 }
 
@@ -145,7 +146,7 @@ em {
 }
 
 .textlink {
-    color: black;
+    color: var(--text-color);
     text-decoration: underline;
     font-family: var(--content-font);
     font-weight: bold;
@@ -153,8 +154,7 @@ em {
     .event-list {
         font-family: var(--content-font);
         color: var(--text-color);
-        /* Dark color for text */
-        background-color: #f9f9f9;
+        background-color: var(--backround-color);
         /* Light background color */
         border-radius: 8px;
         /* Rounded corners */
