@@ -97,7 +97,12 @@ table{
     border-spacing: 0;
     margin: 20px 0;
 }
-
+td{
+    text-align: left;
+}
+th{
+    text-align: left;
+}
 header {
     flex: 1;
     font-family: var(--header-font);
