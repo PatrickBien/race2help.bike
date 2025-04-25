@@ -218,3 +218,10 @@ em {
         display: none;
     }
 }
+
+.fundraisng-img{
+    width: 100%;
+    height: auto;
+    max-width: 60%;
+    margin: 0 auto;
+}
