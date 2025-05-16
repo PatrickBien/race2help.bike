@@ -217,6 +217,91 @@ em {
     .desktop {
         display: none;
     }
+
+    header {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .logo {
+        height: 6rem;
+        margin: 10px 0;
+    }
+
+    .slogan {
+        font-size: 1.5rem;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    section {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-list {
+        width: 95%;
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+        max-height: none;
+    }
+
+    .hard {
+        font-size: 1.1rem;
+    }
+
+    .harder {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 4rem;
+    }
+
+    .slogan {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    section {
+        width: 100%;
+        border-left: none;
+        border-bottom: 4px solid var(--race-red);
+    }
+
+    .event-list li {
+        padding-left: 15px;
+    }
 }
 
 .fundraisng-img{
