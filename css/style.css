@@ -112,13 +112,14 @@ section:hover {
 }
 
 table{
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    margin: 20px 0;
+    margin: 20px auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    max-width: 800px;
 }
 
 td, th {
@@ -217,30 +218,56 @@ em {
 }
 
 .event-list ol {
-    counter-reset: event-counter;
-    list-style-type: none;
-    padding: 0;
+    list-style-position: inside;
+    padding-left: 0;
 }
 
 .event-list li {
-    counter-increment: event-counter;
     margin-bottom: 15px;
-    padding-left: 20px;
     position: relative;
     transition: transform 0.2s ease;
+    padding-left: 0;
 }
 
 .event-list li:hover {
     transform: translateX(5px);
 }
 
-.event-list li:before {
-    content: counter(event-counter) '.';
+.next-race {
+    background: linear-gradient(to right, rgba(253, 187, 45, 0.1), rgba(178, 31, 31, 0.1));
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border-left: 3px solid var(--race-red);
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.next-race:after {
+    content: "NEXT RACE!";
     position: absolute;
-    left: 0;
-    top: 0;
+    top: -10px;
+    right: 10px;
+    background-color: var(--race-red);
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 4px;
     font-weight: bold;
-    color: var(--dark-blue);
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.next-race .textlink {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--race-red);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.next-race strong {
+    display: inline-block;
 }
 
 .fade-in {
