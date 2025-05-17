@@ -101,6 +101,14 @@ section:hover {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.center a, .center img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
 }
 
 table{
@@ -319,6 +327,11 @@ em {
     body {
         font-size: 1rem;
     }
+
+    .center img {
+        max-width: 80%;
+        margin: 15px auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -355,6 +368,7 @@ em {
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .fundraising-img:hover {
