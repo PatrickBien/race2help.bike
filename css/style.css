@@ -501,3 +501,26 @@ footer a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     text-decoration: none;
 }
+
+.completed {
+    color: #888;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-left: 5px;
+    text-decoration: none;
+    background-color: rgba(178, 31, 31, 0.1);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+li:has(.completed) {
+    opacity: 0.6;
+    color: #888;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+li:has(.completed) *:not(.completed) {
+    text-decoration: line-through;
+}
