@@ -552,3 +552,41 @@ details[open] summary {
     border-radius: 6px 6px 0 0;
     margin-bottom: 0;
 }
+
+.result-year {
+    font-size: 1.2em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: var(--slogan-orange);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    display: inline-block;
+    transform: rotate(-2deg);
+}
+
+.trophy-icon {
+    font-size: 1.4em;
+    margin-left: 8px;
+    display: inline-block;
+    animation: trophyShine 2s infinite;
+    color: gold;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+}
+
+.trophy-icon::after {
+    margin-left: 4px;
+    font-size: 0.8em;
+    position: relative;
+    top: -2px;
+}
+
+@keyframes trophyShine {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(5deg) scale(1.2); text-shadow: 0 0 8px rgba(255, 215, 0, 0.9); }
+    100% { transform: rotate(0deg) scale(1); }
+}
