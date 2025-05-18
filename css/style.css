@@ -541,6 +541,28 @@ summary {
     margin-bottom: 15px;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+summary::after {
+    content: "+";
+    font-size: 1.5em;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+details[open] summary::after {
+    content: "-";
+    transform: rotate(180deg);
 }
 
 summary:hover {
@@ -565,24 +587,17 @@ details[open] summary {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     display: inline-block;
-    transform: rotate(-2deg);
 }
 
 .trophy-icon {
     font-size: 1.4em;
-    margin-left: 8px;
+    margin-left: auto;
+    margin-right: 15px;
     display: inline-block;
     animation: trophyShine 2s infinite;
     color: gold;
     font-weight: bold;
     text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
-}
-
-.trophy-icon::after {
-    margin-left: 4px;
-    font-size: 0.8em;
-    position: relative;
-    top: -2px;
 }
 
 @keyframes trophyShine {
