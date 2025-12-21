@@ -605,3 +605,117 @@ details[open] summary {
     50% { transform: rotate(5deg) scale(1.2); text-shadow: 0 0 8px rgba(255, 215, 0, 0.9); }
     100% { transform: rotate(0deg) scale(1); }
 }
+
+
+/* Season Review Card */
+.season-review {
+    background: linear-gradient(135deg, var(--dark-blue), var(--race-red));
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1.25rem auto;
+    max-width: 37.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+.season-review figcaption {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-block-end: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+}
+
+.medal-stats {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.medal-item {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    min-width: 5.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    backdrop-filter: blur(0.25rem);
+}
+
+.medal-item:hover {
+    transform: translateY(-0.25rem) scale(1.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.medal-count {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+
+.medal-icon {
+    display: block;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.3));
+}
+
+.medal-label {
+    display: block;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    font-weight: 600;
+}
+
+.medal-item.gold {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 193, 7, 0.2));
+    border: 0.125rem solid rgba(255, 215, 0, 0.5);
+}
+
+.medal-item.silver {
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.3), rgba(169, 169, 169, 0.2));
+    border: 0.125rem solid rgba(192, 192, 192, 0.5);
+}
+
+.medal-item.bronze {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.3), rgba(184, 115, 51, 0.2));
+    border: 0.125rem solid rgba(205, 127, 50, 0.5);
+}
+
+.medal-item.top5 {
+    background: linear-gradient(135deg, rgba(253, 187, 45, 0.3), rgba(253, 187, 45, 0.2));
+    border: 0.125rem solid rgba(253, 187, 45, 0.5);
+}
+
+.medal-item.dnf {
+    background: linear-gradient(135deg, rgba(178, 31, 31, 0.4), rgba(139, 0, 0, 0.3));
+    border: 0.125rem solid rgba(178, 31, 31, 0.6);
+}
+
+@media (max-width: 480px) {
+    .medal-stats {
+        gap: 0.5rem;
+    }
+    
+    .medal-item {
+        min-width: 4.5rem;
+        padding: 0.75rem;
+    }
+    
+    .medal-count {
+        font-size: 1.4rem;
+    }
+    
+    .medal-icon {
+        font-size: 2rem;
+    }
+}
