@@ -3,7 +3,7 @@
     --race-red: #b21f1f;
     --slogan-orange: #fdbb2d;
     --text-color: #333;
-    --content-font: monospace, sans-serif;
+    --content-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --header-font: 'Impact', sans-serif;
     --backround-color: #f8f9fa;
     --section-spacing: 30px;
