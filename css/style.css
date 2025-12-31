@@ -735,6 +735,7 @@ details[open] summary {
     display: inline-flex;
     align-items: center;
     gap: 0.5em;
+    margin-inline-start: 0.5em;
 }
 
 .copy-btn::before {
