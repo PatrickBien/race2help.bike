@@ -783,3 +783,37 @@ details[open] summary {
 .copy-btn:hover .copy-icon {
     transform: scale(1.2);
 }
+
+
+.join-us {
+    background: linear-gradient(135deg, oklch(0.95 0.02 250), oklch(0.98 0.01 30));
+    border: 0.2rem solid var(--slogan-orange);
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15), 0 0 0 0.25rem oklch(0.85 0.15 85 / 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.join-us::before {
+    content: "🚴";
+    position: absolute;
+    inset-block-start: 0.5rem;
+    inset-inline-end: 1rem;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+
+.join-us h2 {
+    color: var(--race-red);
+    border-block-end-color: var(--slogan-orange);
+}
+
+.join-us ol {
+    font-size: 1.1em;
+}
+
+.join-us li {
+    margin-block-end: 1rem;
+    padding-inline-start: 0.5rem;
+}
