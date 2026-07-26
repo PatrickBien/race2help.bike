@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img" aria-labelledby="rhgh-title rhgh-desc">
+    <title id="rhgh-title">Ride Hard, Give Harder</title>
+    <desc id="rhgh-desc">Team race2help.bike fundraising campaign banner for Ride Hard, Give Harder, supporting radeln und helfen e.V.</desc>
+    <defs>
+        <linearGradient id="rhgh-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1a2a6c" />
+            <stop offset="55%" stop-color="#b21f1f" />
+            <stop offset="100%" stop-color="#fdbb2d" />
+        </linearGradient>
+    </defs>
+
+    <rect width="900" height="600" fill="url(#rhgh-bg)" />
+
+    <rect x="60" y="80" width="150" height="40" fill="#b21f1f" />
+    <text x="72" y="107" font-family="Impact, 'Arial Narrow', sans-serif" font-size="24" fill="#ffffff" letter-spacing="2">TEAM</text>
+
+    <text x="60" y="230" font-family="Impact, 'Arial Narrow', sans-serif" font-size="72" fill="#ffffff">RIDE HARD,</text>
+    <text x="60" y="310" font-family="Impact, 'Arial Narrow', sans-serif" font-size="72" fill="#fdbb2d">GIVE HARDER</text>
+
+    <text x="60" y="380" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">Fundraising campaign for radeln &amp; helfen e.V.</text>
+
+    <g transform="translate(60,415)">
+        <path d="M8 20 c -6 -6 -12 -10 -12 -18 a8 8 0 0 1 16 -4 a8 8 0 0 1 16 4 c 0 8 -6 12 -12 18 z"
+              transform="translate(-8,-8)" fill="#ffffff" />
+    </g>
+    <text x="90" y="424" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff">Supporting disadvantaged children</text>
+</svg>
