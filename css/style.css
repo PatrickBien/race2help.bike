@@ -623,6 +623,25 @@ details[open] summary {
     display: inline-block;
 }
 
+.bike-donation {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+.bike-donation:hover {
+    transform: scale(1.1);
+}
+
+.bike-donation-logo {
+    height: 1.4em;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 4px;
+    border-radius: 3px;
+}
+
 .trophy-icon {
     font-size: 1.4em;
     margin-left: auto;
