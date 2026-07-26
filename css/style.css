@@ -272,6 +272,40 @@ em {
     display: inline-block;
 }
 
+.charity-callout {
+    background: linear-gradient(to right, rgba(178, 31, 31, 0.12), rgba(253, 187, 45, 0.12));
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    border-left: 3px solid var(--race-red);
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.charity-callout:after {
+    content: "NEW!";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: var(--race-red);
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.charity-callout h2 {
+    margin-top: 0;
+}
+
+.charity-callout .textlink {
+    font-weight: bold;
+    color: var(--race-red);
+    white-space: nowrap;
+}
+
 .fade-in {
     opacity: 0;
     animation: fadeIn 2s forwards;
